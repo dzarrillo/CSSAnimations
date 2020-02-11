@@ -1,0 +1,34 @@
+body {
+  text-align: center;
+}
+header.title{
+    align-self: center;
+    text-align: center;
+}
+.card {
+  /* position: absolute; */
+  border: 2px solid black;
+  padding: 0 10px;
+  margin: 20px 10px;
+  box-shadow: 5px 5px #888888;
+}
+
+.card-img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  padding-bottom: 5px;
+}
+p.card-summary {
+  text-align: left;
+  text-indent: 2em;
+}
+
+/* Media query For large screens - laptop */
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+}

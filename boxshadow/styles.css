@@ -1,0 +1,70 @@
+* div {
+    /* background-color: blue; */
+}
+div.div1, div.div2, div.div3, div.div6, div.div7, div.div8, div.div11 {
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    border: 3px solid black;
+    
+}
+
+.div1 {
+    box-shadow: 5px 5px 5px 2px gray;
+}
+
+.div2 {
+    box-shadow: 5px 5px 5px 2px gray inset;
+}
+
+.div3 {
+    box-shadow: 0 0 10px 5px yellow;
+}
+
+div.div4, div.div5 {
+    height: 70px;
+    width: 70px;
+    font: 25pt Arial;
+}
+.div4 {
+    text-shadow: 2px 2px 3px gray;
+}
+.div5 {
+    text-shadow: 0 0 3px yellow;
+}
+
+.div6 {
+    border-radius: 30px;
+}
+.div7 {
+    border-radius: 50px;
+}
+.div8 {
+    border-top-right-radius: 30px;
+}
+
+.div9 {
+    border-radius: 30px;
+}
+.div10 {
+    border-radius: 50px;
+}
+div.div9, div.div10 {
+    height: 300px;
+    width: 300px;
+    float: right;
+    background-image: url("butterfly1.jpg");
+}
+div.div9{
+    background-size: 200% 200%;
+}
+div.div10{
+    background-size: 50% 50%
+}
+
+
+
+.div11:hover {
+    /* -webkit-transform: skew(20deg, 10deg); */
+    transform: skew(20deg, 10deg);
+}

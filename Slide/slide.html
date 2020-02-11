@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Slide</title>
+    <link rel="stylesheet" href="slide.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <div id="card-img" class="card">
+        <div class="card-content">
+          <h3>Slide Animation</h3>
+          <p>Animation that slides</p>
+        </div>
+        <div class="overlay">
+          <h3 class="overlay-title">This is awesome</h3>
+        </div>
+      </div>
+      <button onclick="onHandleSlide()">Slide</button>
+      <button onclick="onHandleRemoveSlideClass()">Remove Slide class</button>
+    </section>
+    <section class="wrapper">
+      <div class="card">
+        <div class="card-content">
+          <img src="cilantro.jpg" alt="">
+        </div>
+        <div class="overlayimage">
+          <h3 class="overlay-img">My Favorite Dish</h3>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function onHandleSlide() {
+        console.log(`Clicked`);
+        card = document.getElementById("card-img");
+
+        card.classList.add("slide");
+      }
+
+      onHandleRemoveSlideClass = () => {
+        card = document.getElementById("card-img");
+        card.classList.remove("slide");
+      };
+    </script>
+  </body>
+</html>

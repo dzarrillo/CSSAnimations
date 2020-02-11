@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css" />
+    <style>
+      .fade-enter {
+        opacity: 0;
+      }
+      .fade-enter-active {
+        opacity: 1;
+        transition: opacity 300ms ease-out;
+      }
+      .fade-leave {
+        opacity: 1;
+       
+      }
+      .fade-leave-active {
+        opacity: 1;
+        transition: opacity 300ms ease-out;
+      }
+      .fade-appear {
+        opacity: 0;
+      }
+      .fade-appear-active {
+        opacity: 1;
+        transition: opacity 1000ms ease-out;
+      }
+
+      
+      
+      .slide-enter {
+        transform: translateX(-100%);
+      }
+      .slide-enter-active {
+        animation: slide-in 300ms ease-out forwards;
+      }
+      .slide-leave {
+        transform: translateX(0%);
+      }
+      .slide-leave-active {
+        animation: slide-out 300ms ease-out forwards;
+      }
+
+      @keyframes slide-in {
+       from { transform: translateX(-100%);}
+        to { transform: translateX(0%);}
+      }
+      @keyframes slide-out {
+        from { transform: translateX(0%);}
+        to { transform: translateX(100%);}
+      }
+
+      .flip-enter {
+        transform: rotateY(180deg);
+      }
+      .flip-enter-active {
+        animation: flip-in 300ms ease-out forwards;
+      }
+      .flip-leave {
+        transform: rotateY(0deg);
+      }
+      .flip-leave-active {
+        animation: flip-out 300ms ease-out forwards;
+      }
+      @keyframes flip-in {
+       from { transform: rotateY(180deg);}
+        to { transform: rotateY(0deg);}
+      }
+      @keyframes flip-out {
+        from { transform: rotateY(0deg);}
+        to { transform: rotateY(90deg);}
+      }
+    </style>
+  </head>
+  <body>
+    <header >
+      <h1 class="header-title">My Web Site</h1>
+    </header>
+    <main class="grid">
+      <div class="card">
+        <h2 class="title">Card One</h2>
+        <img class="card-img" src="./cilantro.jpg" alt="" />
+        <p class="card-summary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+          consectetur vero rerum officia dicta nostrum iste quas ad? Magnam,
+          totam?
+        </p>
+      </div>
+      <div class="card">
+        <h2 class="title">Card Two</h2>
+        <img class="card-img" src="./cooking_lesson.jpg" alt="" />
+        <p class="card-summary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+          consectetur vero rerum officia dicta nostrum iste quas ad? Magnam,
+          totam?
+        </p>
+      </div>
+      <div class="card">
+        <h2 class="title">Card Three</h2>
+        <img class="card-img" src="./healthy_eating.jpg" alt="" />
+        <p class="card-summary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+          consectetur vero rerum officia dicta nostrum iste quas ad? Magnam,
+          totam?
+        </p>
+      </div>
+      <div class="card">
+        <h2 class="title">Card Four</h2>
+        <img class="card-img" src="./healthy_eating.jpg" alt="" />
+        <p class="card-summary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+          consectetur vero rerum officia dicta nostrum iste quas ad? Magnam,
+          totam?
+        </p>
+      </div>
+      <div class="card">
+        <h2 class="title">Card Five</h2>
+        <img class="card-img" src="./healthy_eating.jpg" alt="" />
+        <p class="card-summary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+          consectetur vero rerum officia dicta nostrum iste quas ad? Magnam,
+          totam?
+        </p>
+      </div>
+      <div class="card">
+        <h2 class="title">Card Six</h2>
+        <img class="card-img" src="./healthy_eating.jpg" alt="" />
+        <p class="card-summary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+          consectetur vero rerum officia dicta nostrum iste quas ad? Magnam,
+          totam?
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
